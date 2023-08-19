@@ -25,7 +25,7 @@ demo = gr.Interface(
     gr.Image(type="pil"),
     "image",
     examples=[
-        os.path.join(os.path.dirname(__file__), "docs/example.jpg"),
+        os.path.join(os.path.dirname(__file__), "docs/example.jpeg"),
     ],
 )
 
