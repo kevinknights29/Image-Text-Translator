@@ -21,8 +21,8 @@ COPY scripts/install_dependencies.sh .
 COPY requirements.in .
 
 # Install dependencies
-RUN bash ./install_dependencies.sh ./dev-requirements.txt && \
-    rm ./install_dependencies.sh ./dev-requirements.in
+RUN bash ./install_dependencies.sh ./requirements.in && \
+    rm ./install_dependencies.sh ./requirements.in
 
 # Application
 # Set PYTHONPATH
