@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Installing base packages
-RUN apt update && \
+apt update && \
     apt install -y --no-install-recommends \
     git \
     ca-certificates \
