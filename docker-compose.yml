@@ -8,5 +8,3 @@ services:
             - "7860:7860"
         environment:
             PORT: 7860
-        volumes:
-          - .:/opt/app/
