@@ -3,7 +3,7 @@ This projects aim to build an application capable of translating the text inside
 
 Current Progress:
 
-![image](./docs/image_text_ocr_results.png)
+![image](https://github.com/kevinknights29/Image-Text-Translator/assets/74464814/1dddc0ba-4a57-40a1-a52b-5deebeb1da10)
 
 ---
 
