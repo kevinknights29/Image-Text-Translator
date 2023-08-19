@@ -28,6 +28,9 @@ RUN bash ./install_dependencies.sh ./requirements.in && \
 # Set PYTHONPATH
 ENV PYTHONPATH="${PYTHONPATH}:/opt/app/"
 
+# Prioritize .venv binaries
+ENV PATH="/opt/app/.venv/bin:$PATH"
+
 # Copy modules and app.py
 ADD src ./src
 COPY app.py .
