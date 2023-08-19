@@ -4,11 +4,9 @@ import os
 
 import gradio as gr
 import tesserocr
-from PIL import Image
 
 
 def image_to_text(image):
-    image = Image.open(image)
     package_version = tesserocr.tesseract_version()
     languages = tesserocr.get_languages()
     image_text = tesserocr.image_to_text(image)
@@ -21,9 +19,9 @@ def image_to_text(image):
 
 
 demo = gr.Interface(
-    image_to_text,
-    gr.Image(type="pil"),
-    "image",
+    fn=image_to_text,
+    inputs=gr.Image(type="pil"),
+    outputs=gr.Textbox(label="Text Output", placeholder="Image text will go here:"),
     examples=[
         os.path.join(os.path.dirname(__file__), "docs/example.jpeg"),
     ],
