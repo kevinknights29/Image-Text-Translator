@@ -33,6 +33,7 @@ ENV PATH="/opt/app/.venv/bin:$PATH"
 
 # Copy modules and app.py
 ADD src ./src
+ADD docs ./docs
 COPY app.py .
 
 # Expose port
