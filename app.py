@@ -8,7 +8,7 @@ from PIL import Image
 
 
 def image_to_text(image):
-    image = Image.open("sample.jpg")
+    image = Image.open(image)
     package_version = tesserocr.tesseract_version()
     languages = tesserocr.get_languages()
     image_text = tesserocr.image_to_text(image)
