@@ -7,14 +7,8 @@ import tesserocr
 
 
 def image_to_text(image):
-    package_version = tesserocr.tesseract_version()
-    languages = tesserocr.get_languages()
-    image_text = tesserocr.image_to_text(image)
-    output_msg = (
-        f"Tesseract OCR version: {package_version}\n"
-        f"Languages Available: {languages}\n"
-        f"Text from Image: {image_text}"
-    )
+    image_text = tesserocr.image_to_text(image, lang="spa")
+    output_msg = f"Text from Image: {image_text}"
     return output_msg
 
 
